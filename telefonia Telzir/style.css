@@ -1,0 +1,68 @@
+   /* estilo do botao*/
+   .button {
+       display: inline-block;
+       padding: 10px 25px;
+       font-size: 20px;
+       cursor: pointer;
+       text-align: center;
+       text-decoration: none;
+       outline: none;
+       color: #fff;
+       background-color: #4CAF50;
+       border: none;
+       border-radius: 10px;
+       box-shadow: 0 9px #999;
+
+   }
+
+   .button:hover {
+       background-color: #3e8e41
+   }
+
+   .button:active {
+       background-color: #3e8e41;
+       box-shadow: 0 5px #666;
+       transform: translateY(4px);
+   }
+
+   /* para o banner branco que esta de mundo*/
+   .interface {
+       width: 100px;
+       background-color: #ffffff;
+       margin: 20px auto 10px auto;
+       box-shadow: 0px 0px 10px rgba(0, 0, 0.5);
+       padding: 10px 10px 10px 10px;
+
+   }
+
+   nav#menu {
+       display: block;
+
+   }
+
+
+
+
+   div#interface {
+       width: 95%;
+       background-color: #ffffff;
+       margin: 50px auto 10px;
+       box-shadow: 10px 0px 10px rgba(0, 0, 0.5);
+       padding: 10px 50px 10px 10px;
+
+
+
+   }
+
+   .form {
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       left: 50%;
+   }
+
+   .navform {
+
+       height: 100px;
+   }

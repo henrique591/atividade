@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro de Contato</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<!-- script para valida email -->
+
+<body>
+    <div class="container">
+        <table class="table">
+            <tbody>
+                <!-- formulario para realizar o cadastro como o metodo POST -->
+                <form action="cadastro.php" method="post">
+                    <tr>
+
+                        <td>DD de Origem:</br>
+                            <input type="number" name="ddOrigem" placeholder="Exp : 011" required="required"
+                                maxlength="3" id="ddOrigem">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            DD de Destino:</br>
+                            <input type="number" name="ddDestino" placeholder="Exp : 012" required="required"
+                                maxlength="3" id="ddDestino">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tempo Gasto:</br>
+                            <input type="number" name="tempo" placeholder="Tempo" required="required">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Plano FaleMais da Telzir</br>
+                            <select name="planoFalaMais">
+                                <option value="30"> FaleMais 30 </option>
+                                <option value="60"> FaleMais 60 </option>
+                                <option value="120"> FaleMais 120 </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="submit" value="Cadastrar" name="cadastro"></td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+
+        $("#ddDestino", "#ddOrigem").mask("000");
+    </script>
+
+
+</body>
+
+
+</html>
